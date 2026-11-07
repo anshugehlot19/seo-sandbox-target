@@ -13,17 +13,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FlowMetrics",
-  description: "FlowMetrics helps B2B companies unlock the full potential of their data",
+  title: "Acjon - Digital Agency & Creative Portfolio",
+  description: "Acjon - Digital Agency & Creative Portfolio HTML Template",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en">
+      <body className="min-h-screen bg-[#010103] text-white font-sans antialiased">
+        {children}
+      </body>
     </html>
   );
 }
